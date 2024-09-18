@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Responsive Personal Portfolio Website - HTML, CSS & Vanilla Javascript
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    /><link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+  </head>
+  <body>
+    <div class="scrollToTop-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
+    <header>
+      <a href="#" class="brand awesome">GoBeyond</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <a href="#main">Home</a>
+        <a href="#about">About</a>
+        <a href="#learning">Learnings</a>
+        <a href="#contact">Contact</a>
+
+        <div class="song">
+          <div class="pause" onclick="togglePlay()">🔇</div>
+          <div class="player">
+            <audio
+              class="audio"
+              src="images/SA.mp3"
+              autoplay
+              type="audio"
+            ></audio>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="main" id="main">
+      <div class="content">
+        <h2 class="awesome">Hello, I'm<br /><span>Jonathan Francisco</span></h2>
+        <div class="animated-text">
+          <h3>Fullstack Developer</h3>
+          <h3>Senior Programmer</h3>
+          <h3>Business Analyst</h3>
+        </div>
+        <div style="display: flex;">
+        <a href="https://github.com/JonathanAFrancisco94" class="btn btn-git">Git Projects</a>
+        <div class="media-icons">
+          <a href="https://www.linkedin.com/in/jonathan-francisco-99353a247/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.upwork.com/freelancers/~0173ef814a814761bd" style="float: left; margin-top: 5px !important"
+            ><span class="iconify" data-icon="simple-icons:upwork"></span
+          ></a>
+        </div></div>
+      </div>
+      <div class="content-right">
+        <img class="img-content" src="images/Me1.png" alt="" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="title reveal">
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="content">
+        <div class="column col-left reveal">
+          <!-- <div class="img-card">
+            <img src="images/77.jpg" alt="" />
+          </div> -->
+
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="images/717.jpg" class="img-slide" />
+            </div>
+            <div class="mySlides fade">
+              <div class="wip-gif"></div>
+              <img src="images/WIP2.gif"  class="img-slide" />
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="images/778.jpg" class="img-slide" />
+            </div>
+
+            
+          <!-- <h2>Work From Home Setup</h2> <br>
+          <div class="box-gif">
+            <img src="images/WIP.gif">
+          </div> -->
+            <div class="dot-alignment">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <br />
+
+          <!-- The circles/dots -->
+        </div>
+        <div class="column col-right reveal">
+          <h2 class="content-title">Hi! I always wants to surface my limits. <br>A.K.A GoBeyond!</h2>
+          <p class="paragraph-text">
+            <div class="ul">
+              <li>
+                Worked from scratch on the development of transaction-based
+                softwares
+              </li>
+              <li>
+                Worked in massive existing systems, did reverse engineering,
+                and system migration
+              </li>
+              <li>
+                Perform system and database administration for hosting server
+                and client software
+              </li>
+              <li>
+                Involved in the entire life cycle of the software design
+                process of other projects, including prototyping, proof of
+                concepts, design, interface implementation, testing, and
+                maintenance
+              </li>
+              <li>
+                Troubleshoot various software issues using debugging process
+                and coding techniques
+              </li>
+              <li>
+                Provide high-level customer support to remote clients using
+                our developed system
+              </li>
+              <li>Performed standard and optimized queries</li>
+              <li>
+                Used AGILE and Waterfall, a hybridized method for development
+              </li> </div>
+          </p>
+          <a href="#learning" onclick="playOnly()" class="btn">See More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="learning" id="learning">
+      <div class="title reveal">
+        <h2 class="section-title">My Learnings</h2>
+      </div>
+      <div class="content">
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="./cert/Screenshot_843.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="./cert/Screenshot_844.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="./cert/Screenshot_845.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="./cert/Screenshot_846.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="./cert/Screenshot_847.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="./cert/Screenshot_848.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="./cert/Screenshot_849.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="./cert/Screenshot_850.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="./cert/Screenshot_851.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="./cert/Screenshot_906.jpg" alt="" />
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-img">
+            <img src="./cert/Screenshot_914.jpg" alt="" />
+          </div>
+        </div>
+        <div class="title reveal">
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+      <div class="title reveal">
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="card reveal">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"> </i>
+            </div>
+            <div class="info">
+              <h3>Address</h3>
+              <span
+                ><a href="https://goo.gl/maps/3cv9S1ZTLA5ZXz87A" target="_blank"
+                  >Quezon City, NCR, Philippines</a
+                ></span
+              >
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="contact-icon">
+              <i class="fas fa-phone"> </i>
+            </div>
+            <div class="info">
+              <h3>Phone</h3>
+              <span><a href="#contact">+63-908-6333-997</a></span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"> </i>
+            </div>
+            <div class="info">
+              <h3>Email Address</h3>
+              <span
+                ><a href="mailto:jonathanafrancisco94@gmail.com"
+                  >jonathanafrancisco94 @email.com></a
+                ></span
+              >
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <div class="contact-icon">
+              <i class="fas fa-globe"> </i>
+            </div>
+            <div class="info">
+              <h3>Website</h3>
+              <span
+                ><a
+                  href="https://www.jonathanafrancis.co"
+                  target="_blank"
+                  >www.jonathanafrancis.co</a
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- 
+        <div class="row" id="send">
+          <div class="contact-form reveal">
+            <h3>Send Message</h3>
+
+            <form action="mailto: jonathanafrancisco94@gmail.com">
+              <div class="input-box">
+                <input type="text" name="username" placeholder="Username" />
+              </div>
+              <div class="input-box">
+                <input
+                  type="text"
+                  name="username"
+                  value=""
+                  placeholder="Email"
+                />
+              </div>
+              <div class="input-box">
+                <textarea
+                  name="name"
+                  rows="8"
+                  cols="80"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="input-box">
+                <input type="submit" class="send-btn" name="" value="Send" />
+              </div>
+            </form>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="footer-title">Thanks for visiting!</span>
+      <p>
+        Copyright @2022 <a href="#">GoBeyond JonathanFrancisco</a>. All Rights
+        Reserved.
+      </p>
+    </footer>
+
+    <script src="script.js" charset="utf-8"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  </body>
+</html>
